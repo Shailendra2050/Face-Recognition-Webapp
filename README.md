@@ -1,30 +1,89 @@
-# Face Recognition
 
-Recognizes known faces in a live webcam feed using OpenCV's LBPH (Local Binary Patterns Histograms) face recognizer. A training script processes labeled face images to build a recognition model, and a separate script performs real-time face, eye, and smile detection with identity labeling via the webcam.
+![Demo](banner.png)
 
-## 📸 Demo
 
-![Demo](demo.png)
 
-## Dataset
 
-Custom face images organized in the `images/` folder with one subfolder per person. Haar Cascade XML classifiers for face, eye, and smile detection are stored in the `cascades/` folder.
+A real-time AI Face Recognition Web Application built using Python, Flask, and OpenCV (LBPH algorithm).
+It allows users to register faces, train the model automatically, and recognize faces through a web interface.
 
-## Tech Stack
 
-- OpenCV (with `cv2.face` contrib module)
-- NumPy
-- Pillow
-- pickle
+🚀 Features
 
-## Results
+* 🧑 User face registration system
+* 📸 Image-based dataset creation
+* 🤖 Automatic model training (LBPH Face Recognizer)
+* 👁️ Real-time face recognition via API
+* 🌐 Flask web application
+* 🎨 Clean UI with HTML/CSS/JS
+* ⚡ Background training (non-blocking)
+* ☁️ Ready for Render deployment (cloud-friendly)
 
-Demonstrates real-time face, eye, and smile detection with identity labeling using OpenCV's LBPH recognizer via a live webcam feed. The system trains on labeled face images and performs recognition in real time.
+⸻
 
-## How to Run
+🧠 How It Works
 
-1. Install dependencies: `pip install opencv-python opencv-contrib-python numpy Pillow` or `pip install -r requirements.txt`
-2. Place training images in `images/`, with a subfolder for each person's name.
-3. Update file paths in `faces-train.py` and `Face Recognition.py` to match your local setup.
-4. Run `python faces-train.py` to train the LBPH recognizer and generate `trainer.yml` and `labels.pickle`.
-5. Run `python "Face Recognition.py"` to start real-time face recognition via webcam. Press **q** to quit.
+1. User registers with name + face images
+2. Images are stored in dataset folder
+3. After enough images, model is trained automatically
+4. trainer.yml is generated
+5. Recognition API predicts the user from input image
+
+⸻
+
+🏗️ Tech Stack
+
+* Python 🐍
+* Flask 🌐
+* OpenCV 👁️
+* NumPy 🔢
+* Pillow 🖼️
+* HTML, CSS, JavaScript 🎨
+
+⸻
+
+📁 Project Structure
+Face-Recognition-main/
+│
+├── app.py                  # Flask backend
+├── train.py               # Model training script
+├── requirements.txt
+│
+├── cascades/              # Haarcascade files
+│
+├── recognizer/
+│   ├── trainer.yml
+│   ├── labels.pickle
+│
+├── static/
+│   ├── css/
+│   ├── js/
+│   ├── dataset/
+│   └── assets/
+│       └── banner.png    
+│
+├── templates/
+│   ├── index.html
+│   ├── register.html
+
+⚙️ Installation
+
+1. Clone Repository
+     git clone https://github.com/your-username/face-recognition-webapp.git
+       cd face-recognition-webapp
+    
+
+2. Create Virtual Environment
+   python3 -m venv .venv
+    source .venv/bin/activate
+
+3. Install Dependencies
+   pip install -r requirements.txt
+
+▶️ Run Project
+
+Train Model
+  python train.py
+
+Start Flask App
+ python app.py  
