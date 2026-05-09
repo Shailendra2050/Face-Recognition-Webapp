@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Recognition System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>AI Face Recognition System</h1>
+
+    <video id="video" autoplay></video>
+
+    <canvas id="canvas"></canvas>
+
+    <h2 id="result">Detecting...</h2>
+
+    <div class="buttons">
+        <a href="/register">
+            <button>Register User</button>
+        </a>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/camera.js') }}"></script>
+
+</body>
+</html>
