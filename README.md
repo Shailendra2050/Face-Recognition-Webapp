@@ -1,5 +1,5 @@
 
-![Demo](banner.png)
+![Demo](demo.png)
 
 
 
@@ -71,20 +71,25 @@ Face-Recognition-main/
 ⚙️ Installation
 
 1. Clone Repository
+
      git clone https://github.com/your-username/face-recognition-webapp.git
 cd face-recognition-webapp
 
 2. Create Virtual Environment
+
   python3 -m venv .venv
 source .venv/bin/activate
 
 3. Install Dependencies
+
    pip install -r requirements.txt
 
 ▶️ Run Project
 
 Train Model
+
   python train.py
 
 Start Flask App
+
  python app.py  
