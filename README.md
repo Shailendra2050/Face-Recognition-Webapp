@@ -8,7 +8,7 @@ A real-time AI Face Recognition Web Application built using Python, Flask, and O
 It allows users to register faces, train the model automatically, and recognize faces through a web interface.
 
 
-##🚀 Features
+🚀 Features
 
 * 🧑 User face registration system
 * 📸 Image-based dataset creation
@@ -21,7 +21,7 @@ It allows users to register faces, train the model automatically, and recognize 
 
 ⸻
 
-##🧠 How It Works
+🧠 How It Works
 
 1. User registers with name + face images
 2. Images are stored in dataset folder
@@ -31,7 +31,7 @@ It allows users to register faces, train the model automatically, and recognize 
 
 ⸻
 
-##🏗️ Tech Stack
+🏗️ Tech Stack
 
 * Python 🐍
 * Flask 🌐
@@ -41,29 +41,28 @@ It allows users to register faces, train the model automatically, and recognize 
 * HTML, CSS, JavaScript 🎨
 
 
+⚙️ Installation
 
-##⚙️ Installation
-
-##1. Clone Repository
+1. Clone Repository
 
      git clone https://github.com/your-username/face-recognition-webapp.git
 cd face-recognition-webapp
 
-##2. Create Virtual Environment
+2. Create Virtual Environment
 
   python3 -m venv .venv
 source .venv/bin/activate
 
-##3. Install Dependencies
+3. Install Dependencies
 
    pip install -r requirements.txt
 
-##▶️ Run Project
+▶️ Run Project
 
-##Train Model
+Train Model
 
   python train.py
 
-##Start Flask App
+Start Flask App
 
  python app.py  
